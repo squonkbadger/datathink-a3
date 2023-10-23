@@ -5,4 +5,3 @@ Datalogical Thinking 2023 - Assignment 3 - Algorithm Design
 - Contributor 1
 - Contributor 2
 - Contributor 3
-- Contributor 4
