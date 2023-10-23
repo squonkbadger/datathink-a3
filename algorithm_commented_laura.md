@@ -2,26 +2,26 @@
 
 ## Pseudocode
 
-Importing necessary libraries to the program.
+Importing necessary libraries to the program.<br>
 `Import necessary libraries`
 
-Loading the dataset.
+Loading the dataset.<br>
 `Load dataset into program accessing dataset's path`
 
-Printing the dataset.
+Printing the dataset.<br>
 `Print the dataset to see whether the data was imported correctly`
 
 > Here a lot of depends on which kind of data we are dealing with – even though we are not writing actual code, this decision still influences our other choices. In the Python code example, the file is in TXT file format, but I would personally like to process tabular data in CSV or TSV file formats. EndNote also allows exporting XML file format. I will write the pseudocode as if we have tabular data (but we can, of course, change it later).
 
 Our goal is to check every row in the column named keyword and return the title of the article if it is written about the selected keyword. The keyword is determined by the user.
 
-Define first variable.
+Defining first variable.<br>
 `Define variable result as empty list`
  
-Define second variable.
+Defining second variable.<br>
 `Define variable keyword as user input`
 
-Iteration and selection.
+Iterating and selecting the necessary data.
 ```
 FOR row in dataset:
     IF keyword = keyword in keywords column
@@ -30,11 +30,11 @@ FOR row in dataset:
         Continue
 ```
 
-Printing the titles, which had the keyword that the user looked for.
+Printing the titles, which had the keyword that the user looked for.<br>
 `Print result`
 
 ## Python code
-NB! I have used for experimenting my own tabular TSV dataset, so some parameters are different.
+> NB! I have used for experimenting my own tabular TSV dataset, so some parameters are different.
 
 ```
 import pandas as pd
