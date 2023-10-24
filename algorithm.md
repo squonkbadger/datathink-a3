@@ -2,7 +2,7 @@
 `If (dataset length is > 0)`<br>
 `   Write "Enter search parameter:"`<br>
 `   Read parameter`<br>
-`   If (parameter is "year" or parameter is "keyword" or parameter is "author" or parameter is "year" or parameter is "language" or parameter is "type")`<br>
+`   If (parameter is "keyword" or parameter is "author" or parameter is "year" or parameter is "language" or parameter is "type")`<br>
 `      Write "Enter parameter value:"`<br>
 `      Read value`<br>
 `      If (parameter is "year")`<br>
