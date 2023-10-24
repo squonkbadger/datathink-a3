@@ -13,8 +13,8 @@ Maybe I am missing something, but why does parameter "year" appear two times?<br
 `         Set count to 0`<br>
 Intuitively, as we are adding string values to a list, I would not set any count, but I know that the book does it, so this is just a little sidenote. Maybe the count should be after the creation of the empty list, because otherwise it would implement only here.<br>
 `         For record in dataset`<br>
-`			For keyword in record.keywords`<br>
-`           	If (keyword contains value)`<br>
+`			      For keyword in record.keywords`<br>
+`           	  If (keyword contains value)`<br>
 `               	Add record to results`<br>
 `      If (parameter is "author")`<br>
 `         For record in dataset`<br>
