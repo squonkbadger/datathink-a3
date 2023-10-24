@@ -7,11 +7,11 @@
 `      Read value`<br>
 `      If (parameter is "year")`<br>
 `         Read end`<br>
-Maybe I am missing something, but why does parameter "year" appear two times?
+Maybe I am missing something, but why does parameter "year" appear two times?<br>
 `      Set results as empty list`<br>
 `      If (parameter is "keyword")`<br>
 `         Set count to 0`<br>
-Intuitively, as we are adding string values to a list, I would not set any count, but I know that the book does it, so this is just a little sidenote. Maybe the count should be after the creation of the empty list, because otherwise it would implement only here.
+Intuitively, as we are adding string values to a list, I would not set any count, but I know that the book does it, so this is just a little sidenote. Maybe the count should be after the creation of the empty list, because otherwise it would implement only here.<br>
 `         For record in dataset`<br>
 `			For keyword in record.keywords`<br>
 `           	If (keyword contains value)`<br>
@@ -25,7 +25,7 @@ Intuitively, as we are adding string values to a list, I would not set any count
 `         For record in dataset`<br>
 `           If (record.year is >= value and record.year is <= end)`<br>
 `               Add record to results`<br>
-I do not quite catch the logic behind the year parameter - could you explain it to me?
+I do not quite catch the logic behind the year parameter - could you explain it to me?<br>
 `      If (parameter is "language")`<br>
 `         For record in dataset`<br>
 `           If (record.language is value)`<br>
