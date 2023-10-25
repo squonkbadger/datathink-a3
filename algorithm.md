@@ -8,7 +8,7 @@
 `       If (parameter is "year")`<br>
 `           Write "Enter end of year range:`"<br>
 `           Read end`<br>
-`       If (parameter is "keyword")`<br>       
+`       If (parameter is "keyword")`<br>
 `           For record in dataset.xml.records`<br>        
 `               For keyword in record.keywords`<br>
 `           	    If (keyword contains value)`<br>
@@ -31,6 +31,6 @@
 `         	    If (record.work-type is value)`<br>
 `             	    Add record to results`<br>
 `       If (results size is 0)`<br>
-`         Write "No results."`<br>
+`           Write "No results."`<br>
 `   Else write "Error: invalid parameter."`<br>
 `Else write "Error: empty dataset."`
