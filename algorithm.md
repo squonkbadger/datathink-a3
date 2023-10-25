@@ -9,7 +9,7 @@
 `           Write "Enter end of year range:`"<br>
 `           Read end`<br>
 `       If (parameter is "keyword")`<br>
-`           For record in dataset.xml.records`<br>        
+`           For record in dataset.xml.records`<br>
 `               For keyword in record.keywords`<br>
 `           	    If (keyword contains value)`<br>
 `               	    Add record to results`<br>
