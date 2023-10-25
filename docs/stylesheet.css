@@ -23,16 +23,6 @@ background-color: #20B2AA;
 color: white;
 }
 
-div {
-  height: 300px;
-  width: 400px;
-}
-p {
-  height: 75%;
-  width: 75%;
-  blackground-color: darkkhaki;
-}
-
 .container {
 width: 85%;
 padding: 20px 20px 20px 20px;
@@ -63,4 +53,8 @@ font-family: Arial;
 
 ul {
 font-family: Arial;
+}
+
+table, th, td {
+  border-style: solid;
 }
