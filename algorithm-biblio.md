@@ -10,12 +10,12 @@
 `           READ upper`<br>
 `       SET results TO empty list`<br>
 `       IF (parameter is "k")`<br>
-`           FOR record IN dataset`<br>
+`           FOR record IN dataset.xml.records`<br>
 `               FOR keyword IN record.keywords`<br>
 `           	    IF (keyword contains value)`<br>
-`               	ADD record TO results`<br>
+`               	    ADD record TO results`<br>
 `       IF (parameter is "a")`<br>
-`           FOR record IN dataset`<br>
+`           FOR record IN dataset.xml.records`<br>
 `               FOR author IN record.contributors.authors`<br>
 `                   IF (author contains value)`<br>
 `               	    ADD record TO results`<br>
@@ -24,19 +24,19 @@
 `               IF (record.year is >= value AND record.year is <= upper)`<br>
 `                   ADD record TO results`<br>
 `       IF (parameter is "l")`<br>
-`           FOR record IN dataset`<br>
-`               FOR (record.language is value)`<br>
+`           FOR record IN dataset.xml.records`<br>
+`               IF (record.language is value)`<br>
 `                   ADD record to results`<br>
 `       IF (parameter is "t")`<br>
-`           FOR record IN dataset`<br>
+`           FOR record IN dataset.xml.records`<br>
 `         	    IF (record.work-type is value)`<br>
 `             	    ADD record TO results`<br>
 `       IF (results length is 0)`<br>
 `           WRITE "No results."`<br>          
-`       ELSE FOR record IN results
+`       ELSE FOR record IN results`<br>
 `           FOR author IN record.contributors.authors`<br>
 `                WRITE author+`<br>
-`           WRITE ". ("record.year"). "+record.titles.title+". "`<br>
+`           WRITE ". ("+record.year+"). "+record.titles.title+". "`<br>
 `           IF (record.work-type is "Book")`<br>
 `                WRITE "("+record.edition+"). "+record.publisher+". "`<br>
 `           ELSE write record.titles.secondary-title+", "`<br>
