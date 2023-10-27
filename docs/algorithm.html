@@ -21,6 +21,7 @@
 <ol>
 	<li>User selects parameter type</li>
 	<li>User selects the parameter value</li>
+	<li>If the selected parameter is "year", user selects a second parameter value</li>
 	<li>Create an empty result list</li>
 	<li>Iterate through the dataset using an if/else condition to check if each reference corresponds to the specified parameter. If it does, add it to the previously created result list</li>
 	<li>Return the result list to the user</li>
@@ -33,7 +34,7 @@
 	<li>Iterate through the dataset: for each reference, check if the keyword list contains <em style="color:MediumSeaGreen;">Tuberculosis</em>, if it does, add the reference to the result list</li>
 	<li>Return the result list containing all references with <em style="color:MediumSeaGreen;">Tuberculosis</em> included in their keywords</li>
 </ol>
-<h2>Examples of parameters based on the curated dataset</h2>
+<h2>Examples of parameters based on the curated dataset considered during planning:</h2>
 <ul>
 	<li>Keyword: the reference includes the specified term in its keyword list</li>
 	<li>Full text: the reference includes a full-text file</li>
@@ -42,4 +43,12 @@
 	<li>Year: the reference was published in the specified year</li>
 </ul>
 	<p>...and so on. In the <a href="dataset.html">dataset section</a> there is more details about the dataset.</p>
+<h2>Parameters chosen for implementation:</h2>
+<ul>
+	<li>Keyword: the parameter value is present in the keyword list of the record (value example: "pathogens")</li>
+	<li>Author: the parameter value is present in the author list of the record (value example: "Bennet")</li>
+	<li>Year: The publishing year of the record is within the specified range (value example: "2001" "2005")</li>
+	<li>Language: the language of the record corresponds to the parameter value (value example: "English")</li>
+	<li>Type: the record type corresponds to the parameter value (value example: "Book")</li>
+</ul>
 </div>
