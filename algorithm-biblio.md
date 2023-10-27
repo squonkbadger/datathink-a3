@@ -43,6 +43,6 @@
 `           IF (record.work-type is "Conference paper" OR record.work-type is "Article" OR record.work-type is "Conference abstract")`<br>
 `               WRITE record.volume+"("+record.number+" ed.), "+record.pages+"."`<br>
 `           IF (record.work-type is "Preprint" OR record.work-type is "Article")`<br>
-`               WRITE record.urls.related-urls.url`<br>
+`               WRITE record.urls.related-urls.url+\n`<br>
 `   ELSE WRITE "Error: invalid parameter."`<br>
 `ELSE WRITE "Error: empty dataset."`
