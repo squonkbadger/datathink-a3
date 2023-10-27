@@ -14,3 +14,6 @@ The dataset contains information about references concerning latent tuberculosis
 
 ## The Algorithm
 The goal of the algorithm is to allow the user to select a parameter and a parameter value in order to obtain a subset of the dataset containing only references satisfying the parameter.
+
+## The Website
+The website providing information about the project can be reached through the following link <https://squonkbadger.github.io/datathink-a3/>
