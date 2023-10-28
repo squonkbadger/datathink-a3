@@ -40,7 +40,7 @@
 `           IF (record.work-type is "Book")`<br>
 `               WRITE "("+record.edition+"). "+record.publisher+".<br>"`<br>
 `           ELSE WRITE record.titles.secondary-title+", "`<br>
-`           IF (record.work-type is "Conference paper" OR "Conference abstract")
+`           IF (record.work-type is "Conference paper" OR "Conference abstract")`<br>
 `               WRITE record.volume+"("+record.number+"), "+record.pages+".<br>"`<br>
 `           IF (record.work-type is "Article")`<br>
 `               WRITE record.volume+"("+record.number+"), "+record.pages+". "+record.urls.related-urls.url+"<br>"`<br>
