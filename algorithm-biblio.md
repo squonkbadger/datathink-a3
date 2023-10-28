@@ -46,5 +46,5 @@ Please correct me if I am wrong, but it seems that the author's field usually al
 `           IF (record.work-type is "Preprint" OR record.work-type is "Article")`<br>
 `               WRITE record.urls.related-urls.url+\n`<br>
 `   ELSE WRITE "Error: invalid parameter."`<br>
-`ELSE WRITE "Error: empty dataset."`
+`ELSE WRITE "Error: empty dataset."`<br>
 In APA, some information is represented in the italics, but I think it is not that important right now.<br>
