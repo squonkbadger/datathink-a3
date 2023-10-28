@@ -36,13 +36,15 @@
 `       ELSE FOR record IN results`<br>
 `           FOR author IN record.contributors.authors`<br>
 `                WRITE author+`<br>
+Please correct me if I am wrong, but it seems that the author's field usually already ends with a full stop, so it is unnecessary to include it in the following WRITE. 
 `           WRITE ". ("+record.year+"). "+record.titles.title+". "`<br>
 `           IF (record.work-type is "Book")`<br>
-`                WRITE "("+record.edition+"). "+record.publisher+". "`<br>
-`           ELSE write record.titles.secondary-title+", "`<br>
+`               WRITE "("+record.edition+"). "+record.publisher+". "`<br>
+`           ELSE WRITE record.titles.secondary-title+", "`<br>
 `           IF (record.work-type is "Conference paper" OR record.work-type is "Article" OR record.work-type is "Conference abstract")`<br>
 `               WRITE record.volume+"("+record.number+" ed.), "+record.pages+"."`<br>
 `           IF (record.work-type is "Preprint" OR record.work-type is "Article")`<br>
 `               WRITE record.urls.related-urls.url+\n`<br>
 `   ELSE WRITE "Error: invalid parameter."`<br>
 `ELSE WRITE "Error: empty dataset."`
+In APA, some information is represented in the italics, but I think it is not that important right now.

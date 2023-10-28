@@ -15,7 +15,7 @@ text-decoration: none;
 text-align: center;
 font-size: 20px;
 flex: 50%;
-border-right: 2px solid #20B2AA;
+border-right: 1.5px solid #20B2AA;
 }
 
 .navbar a:hover {
@@ -43,10 +43,6 @@ h2 {
 font-family: Arial;
 }
 
-h3 {
-font-family: Arial;
-}
-
 ol {
 font-family: Arial;
 }
@@ -55,10 +51,25 @@ ul {
 font-family: Arial;
 }
 
-table, th, td {
+table {
 font-family: Arial;
+border-spacing: 1px;
+}
+
+th, td {
+font-family: Arial;
+padding: 5px;
 }
 
 a {
 font-family: Arial;
+}
+
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+th {
+  background-color: #20B2AA;
+  color: white;
 }

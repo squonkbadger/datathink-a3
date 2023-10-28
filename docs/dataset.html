@@ -18,7 +18,13 @@
 <h1 id="top">Information about the dataset</h1>
 <p>The dataset is a sample of references stored in an EndNote library, resulted from a scoping review project on latent tuberculosis and cascade of care. In this particular project, the searches were run in <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed</a>, <a href="https://embase.com" target="_blank">Embase.com</a>, and <a href="https://www.scopus.com" target="_blank">Scopus</a>. 
 The metadata included in the EndNote library serves to build references following the <a href="https://www.iso.org/standard/72642.html" target="_blank"><i>ISO 690:2021</i></a>.</p>
-<h2>The curation of the dataset</h2>
+<h2>Table of contents</h2>
+<ul>
+    <li><a href="#summary">The curation of the dataset</a></li>
+    <li><a href="#changes">Additional changes made for the purpose of this assignment</a></li>
+    <li><a href="#xml-tree">XML tree of the dataset</a></li>
+</ul>
+<h2 id="curation">The curation of the dataset</h2>
 <p>The data included in the dataset needs to varied so that the algorithm can perform a diversity of tasks. Thus, we generated a new EndNote library with randomly 500 references selected from the original EndNote library in the scoping review.</p>
 <p>It was advantageous to start with such large dataset so that we could make a final choice of 59 records with different reference types:</p>	
 <ul>
@@ -28,11 +34,11 @@ The metadata included in the EndNote library serves to build references followin
 	<li>Conference abstract</li>
 	<li>Article</li>
 </ul>
-<h3>Additional changes made for the purpose of this assignment</h3>
-<p>We pretended having references in different languages among the records in the dataset. By using <a href="https://translate.google.com/" target="_blank">Google Translate</a> we converted the title of some random records into other languages. In addition, we moved the title in English into the ‘translated title’ field in EndNote. In such manner we expand the field options for the algorithm to perform the tasks.</p>
+<h2 id="changes">Additional changes made for the purpose of this assignment</h2>
+<p>We pretended having references in different languages among the records in the dataset. By using <a href="https://translate.google.com/" target="_blank">Google Translate</a> we converted the title of some random records into other languages. In addition, we moved the title in English into the "translated title" field in EndNote. In such manner we expand the field options for the algorithm to perform the tasks.</p>
 <p>The dataset was curated further by removing the EndNote-specific metadata in order to focus on the information strictly related to the set of references. In addition, redundant tags and tags that did not apply to the set of selected records were removed or adjusted.</p>
-<h2>XML tree of the dataset</h2>
+<h2 id="xml-tree">XML tree of the dataset</h2>
 <p>The image below shows a tree diagram describing the XML structure for an individual record in the dataset:</p>
-<img src="img/dataset-tree.png">
+<img src="img/dataset-tree.png" width="486" height="1106"><br>
 <a href="#top">Back to top</a>
 </div>
