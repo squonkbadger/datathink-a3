@@ -36,7 +36,7 @@
 `       ELSE FOR record IN results`<br>
 `           FOR author IN record.contributors.authors`<br>
 `                WRITE author+" "`<br>
-`           WRITE " ("+record.year+"). <i>"+record.titles.title+"</i>. "`<br>
+`           WRITE "("+record.year+"). "+record.titles.title+". "`<br>
 `           IF (record.work-type is "Book")`<br>
 `               WRITE "("+record.edition+"). "+record.publisher+".<br>"`<br>
 `           ELSE WRITE record.titles.secondary-title+", "`<br>
