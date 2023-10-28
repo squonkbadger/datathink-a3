@@ -35,14 +35,16 @@
 `           WRITE "No results."`<br>
 `       ELSE FOR record IN results`<br>
 `           FOR author IN record.contributors.authors`<br>
-`                WRITE author`<br>
+`                WRITE author+" "`<br>
 `           WRITE " ("+record.year+"). <i>"+record.titles.title+"</i>. "`<br>
 `           IF (record.work-type is "Book")`<br>
-`               WRITE "("+record.edition+"). "+record.publisher+". "`<br>
+`               WRITE "("+record.edition+"). "+record.publisher+".<br>"`<br>
 `           ELSE WRITE record.titles.secondary-title+", "`<br>
-`           IF (record.work-type is "Conference paper" OR record.work-type is "Article" OR record.work-type is "Conference abstract")`<br>
-`               WRITE record.volume+"("+record.number+" ed.), "+record.pages+".<br>"`<br>
-`           IF (record.work-type is "Preprint" OR record.work-type is "Article")`<br>
+`           IF (record.work-type is "Conference paper" OR "Conference abstract")
+`               WRITE record.volume+"("+record.number+"), "+record.pages+".<br>"`<br>
+`           IF (record.work-type is "Article")`<br>
+`               WRITE record.volume+"("+record.number+"), "+record.pages+". "+record.urls.related-urls.url+"<br>"`<br>
+`           IF (record.work-type is "Preprint")`<br>
 `               WRITE record.urls.related-urls.url+"<br>"`<br>
 `   ELSE WRITE "Error: invalid parameter."`<br>
 `ELSE WRITE "Error: empty dataset."`<br>
