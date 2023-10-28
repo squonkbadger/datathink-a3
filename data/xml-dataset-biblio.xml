@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml [
+    <!ELEMENT xml (records)>
+    <!ELEMENT records (record+)>
+    <!ELEMENT record (contributors, auth-address?, titles, periodical?, pages?, volume?, number?, edition?, keywords, year, isbn?, pub-location?, publisher?, abstract?, work-type, urls, electronic-resource-num?, remote-database-provider, language)>
+    <!ELEMENT contributors (authors, secondary-authors?)>
+    <!ELEMENT auth-address (#PCDATA)>
+    <!ELEMENT authors (author+)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT secondary-authors (author+)>
+    <!ELEMENT titles (title, secondary-title?, translated-title?)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT secondary-title (#PCDATA)>  
+    <!ELEMENT translated-title (#PCDATA)>  
+    <!ELEMENT periodical (full-title)>
+    <!ELEMENT full-title (#PCDATA)>
+    <!ELEMENT pages (#PCDATA)>
+    <!ELEMENT number (#PCDATA)>
+    <!ELEMENT volume (#PCDATA)>
+    <!ELEMENT edition (#PCDATA)>
+    <!ELEMENT keywords (keyword+)>
+    <!ELEMENT keyword (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT isbn (#PCDATA)>
+    <!ELEMENT pub-location (#PCDATA)>
+    <!ELEMENT publisher (#PCDATA)>
+    <!ELEMENT abstract (#PCDATA)>
+    <!ELEMENT work-type (#PCDATA)>
+    <!ELEMENT urls (related-urls*, pdf-urls?)>
+    <!ELEMENT related-urls (url+)>
+    <!ELEMENT url (#PCDATA)>
+    <!ELEMENT pdf-urls (url)>
+    <!ELEMENT electronic-resource-num (#PCDATA)>
+    <!ELEMENT remote-database-provider (#PCDATA)>
+    <!ELEMENT language (#PCDATA)>
+]>
 <xml>
     <records>
         <record>
