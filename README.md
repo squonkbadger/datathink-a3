@@ -19,8 +19,8 @@ The goal of the algorithm is to allow the user to select a parameter and a param
 The website providing information about the project can be reached through the following link <https://squonkbadger.github.io/datathink-a3/>
 
 ## This A3 Project complies with the minimum requirements
-- The dataset has been curated for the algorithm to perform properly, contains 59 items, and has a .xml file
-- The algorithm is written in markdown, has 36 lines of code, and includes a path, a variable, and several selections
-- The website contains the files index.html, dataset.html, algorithm.html, and people.html
-- The assignment is submitted as a GitHub repository
-- The website uses the GitHub pages
+- The dataset has been curated for the algorithm to perform properly, contains 59 items, and has a .xml file.
+- The algorithm is written in a markdown file using pseudocode, has 48 lines of code, and includes a path, a variable, and several selections and iterations.
+- The website contains the files index.html, dataset.html, algorithm.html, and people.html.
+- The assignment is submitted as a GitHub repository.
+- The website uses the GitHub Pages.
